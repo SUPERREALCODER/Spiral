@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drawing Spirals in JavaScript</title>
+</head>
+<body>
+  <h1>System</h1>
+  <canvas id="myCanvas" width="500" height="500"></canvas>
+
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+
+    // Define the spiral parameters
+    var radius = 0;
+    var angle = 0;
+    var numArms = 4;
+
+    // Set the spiral style
+    context.strokeStyle = "black";
+    context.lineWidth = 2;
+
+    // Draw the spiral
+    while (radius < canvas.width / 2) {
+      for (var i = 0; i < numArms; i++) {
+        context.beginPath();
+        context.moveTo(canvas.width / 2, canvas.height / 2);
+        context.lineTo(canvas.width / 2 + radius * Math.cos(angle + i * 2 * Math.PI / numArms), canvas.height / 2 + radius * Math.sin(angle + i * 2 * Math.PI / numArms));
+        context.stroke();
+      }
+
+      radius += 1;
+      angle += 0.1;
+    }
+  </script>
+  <div> 
+    <h2>Editing</h2>
+    <a href="https://app.clipchamp.com/" target="_blank"><button class="button">Microsoft Clipchamp</button></a>
+    <a href="https://studio.youtube.com/channel/UCD6-WsbwmGi4hPzJM1MgZsA" target="_blank"><button class="button">Trours Youtube</button></a>
+    <a href = "https://studio.youtube.com/channel/UC4Oge7R7gMdYeM1plLOieSw" target="_blank"><button class="button">KO YouTube</button></a>
+    <a><button class="button">Trours Insta</button></a>
+    <a><button class="button">Trours facebook</button></a>
+    <a href="https://www.instagram.com/kolkataodyssey2023/" target="_blank"><button class="button">KO Insta</button></a>
+    <a href="https://www.facebook.com/KolkataOdyssey" target="_blank"><button class="button">KO facebook</button></a>
+    <a href="https://www.canva.com/" target="_blank"><button class="button">Canva</button></a>
+    <a href="https://designer.microsoft.com/design?cid=7475a5e7-8ad4-4b35-8873-57dbf6e22d9e" target="_blank"><button class="button">Designer</button></a>
+  </div>
+ 
+  
+</body>
+</html>
