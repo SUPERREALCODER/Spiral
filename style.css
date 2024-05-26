@@ -1,3 +1,60 @@
-.button{
-    
+body{
+    color: white;
+    background-image: url(static/images/Dark\ Blue\ Simple\ Dark\ Tech\ and\ Gaming\ Bio-Link\ Website.png);
 }
+
+.edit{
+    display: inline-grid;
+
+
+}
+.dev{
+    display: inline-table;
+}
+.per{
+    display: inline-grid;
+}
+.but{
+    border: 5px solid rgb(16, 228, 228);
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: aqua;
+    outline: none;
+    border-radius: 100px;
+   font-family: "Caveat", cursive;
+   font-optical-sizing: auto;
+   font-weight: 900;
+   font-style: normal;
+   
+   text-shadow: 3px 0 #6992a0;
+   font-size: 2rem;
+
+
+
+}
+.micro{
+    background-image: url(static/images/clipclamp.png);
+    border-radius: 100px;
+}
+.trou{
+    background-image: url(static/images/logo-color.png);
+    border-radius: 100px;
+    font-size: 0rem;
+    border: 5px solid rgb(203, 16, 228);
+}
+.ko{
+    background-image: url(static/images/kolkata-odyssey-logo\ \(1\).png);
+    border-radius: 100px;
+    border: 5px solid rgb(17, 4, 75);
+    font-size: 5rem;
+    color: #ddc809;
+
+}
+.shape {
+    height: 0;
+    width: 0;
+    border-bottom: 30px solid black;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
