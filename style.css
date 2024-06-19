@@ -1,18 +1,24 @@
 body{
+    
+  
     color: white;
     background-image: url(static/images/Dark\ Blue\ Simple\ Dark\ Tech\ and\ Gaming\ Bio-Link\ Website.png);
 }
 
 .edit{
-    display: inline-grid;
+    display: flex;
+    width: 50px;
+  
+    flex-direction: row;
+    
 
 
 }
 .dev{
-    display: inline-table;
+    display: flex;
 }
 .per{
-    display: inline-grid;
+    display: flex;
 }
 .but{
     border: 5px solid rgb(16, 228, 228);
@@ -57,4 +63,7 @@ body{
     border-bottom: 30px solid black;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
+  }
+  .all{
+    display: flex;
   }
